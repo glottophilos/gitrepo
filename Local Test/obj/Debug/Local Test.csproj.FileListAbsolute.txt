@@ -1,0 +1,56 @@
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csc.exe
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csc.exe.config
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csc.rsp
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csi.exe
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csi.exe.config
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\csi.rsp
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.AppContext.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Console.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.IO.Compression.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.IO.Pipes.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Claims.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.ValueTuple.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Xml.XPath.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\vbc.exe
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\vbc.exe.config
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\vbc.rsp
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\VBCSCompiler.exe
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\obj\Debug\Local Test.csprojAssemblyReference.cache
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\obj\Debug\Local Test.csproj.CoreCompileInputs.cache
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\obj\Debug\Local Test.csproj.CopyComplete
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\Local Test Glottophilos.dll.config
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\Local Test Glottophilos.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\bin\Local Test Glottophilos.pdb
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\obj\Debug\Local Test Glottophilos.dll
+C:\Users\jonat\Documents\Personal\programs\JonathanWebsite\Local Test\obj\Debug\Local Test Glottophilos.pdb

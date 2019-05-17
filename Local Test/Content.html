@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+
+    <!--Content of cookie messages-->
+    <div class="first-message-container" id="en-cookie-message-content">
+        <p class="cookie-message">By continuing to use this site you agree to the use of cookies to maintain your 
+        language preferences.</p><div onclick="acceptButton();" class="accept-button">Accept</div>       
+    </div>
+
+    <div lang="it" class="first-message-container" id="it-cookie-message-content">
+        <p class="cookie-message">Nell'uso di questo sito l'utente permette l'uso di cookie per mantenere le Sue 
+        preferenze di lingua.</p><div onclick="acceptButton();" class="accept-button">Accetto</div>        
+    </div>
+
+    <div lang="ru" class="first-message-container" id="ru-cookie-message-content">
+        <p class="cookie-message">Использование этого сайта является согласием с использованием куки, чтобы сохранять 
+        Ваш выбор языка.</p><div onclick="acceptButton();" class="accept-button">Я согласен/на</div>        
+    </div>
+
+    <div lang="fr" class="first-message-container" id="fr-cookie-message-content">
+        <p class="cookie-message">En utilisant ce site, l'utilisateur permet l'usage des cookie pour garder votre 
+            choix de langue.</p><div onclick="acceptButton();" class="accept-button">J'accepte</div>       
+    </div>
+
+    <div lang="es" class="first-message-container" id="sp-cookie-message-content">
+        <p class="cookie-message">El uso de este sito indica el acuerdo al uso de cookie para mantener Sus preferencias 
+        de idoma.</p><div onclick="acceptButton();" class="accept-button">Accepto</div>       
+    </div>
+
+    <!--Master content-->
+    <div class="dropdown" id="enmenucontent">
+        <span class="mobilemenu"><div class="menubar"></div><div class="menubar"></div><div class="menubar"></div></span>
+        <nav class="headmenu dropdown-content">
+            <a class="pagelink" id="homepage" runat="server" href="index.html">Glottophilos.com</a>
+            <a class="pagelink" runat="server" href="about.html">About</a>
+            <a class="pagelink" runat="server" href="language_proficiencies.html">Language Proficiencies</a>
+            <a class="pagelink" runat="server" href="tutoring_services.html">Tutoring Services</a>
+            <a class="pagelink" runat="server" href="contact.html">Contact</a>
+
+            <div class="language-selector">
+                <div>Select Language</div>
+                <div class="langopt">
+                    <div class="langswitch-button" onclick="enswitch();">English</div>
+                    <div class="langswitch-button" onclick="itswitch();" lang="it">Italiano</div>
+                    <div class="langswitch-button" onclick="ruswitch();" lang="ru">Русский</div>
+                    <div class="langswitch-button" onclick="frswitch();" lang="fr">Fran&ccedil;ais</div>
+                    <div class="langswitch-button" onclick="spswitch();" lang="es">Espa&ntilde;ol</div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <p id="enfooter" class="cright">
+        &nbsp;&copy;
+        2019- Jonathan Walls
+    </p>
+
+    <!--Italian Master-->
+    <div class="dropdown" id="itmenucontent" lang="it">
+        <span class="mobilemenu"><div class="menubar"></div><div class="menubar"></div><div class="menubar"></div></span>
+        <nav class="headmenu dropdown-content">
+            <a class="pagelink" id="homepage" runat="server" href="index.html">Glottophilos.com</a>
+            <a class="pagelink" runat="server" href="about.html">Generale</a>
+            <a class="pagelink" runat="server" href="language_proficiencies.html">Lingue</a>
+            <a class="pagelink" runat="server" href="tutoring_services.html">Servizi Insegnante Privato</a>
+            <a class="pagelink" runat="server" href="contact.html">Contatto</a>
+
+            <div class="language-selector">
+                <div>Selezzionare Lingua</div>
+                <div class="langopt">
+                    <div class="langswitch-button" onclick="enswitch();" lang="en">English</div>
+                    <div class="langswitch-button" onclick="itswitch();">Italiano</div>
+                    <div class="langswitch-button" onclick="ruswitch();" lang="ru">Русский</div>
+                    <div class="langswitch-button" onclick="frswitch();" lang="fr">Fran&ccedil;ais</div>
+                    <div class="langswitch-button" onclick="spswitch();" lang="es">Espa&ntilde;ol</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <p id="itfooter" class="cright" lang="it">
+        &nbsp;&copy;
+        2019 - Jonathan Walls
+    </p>
+    <!--Russian Master-->
+    <div class="dropdown" id="rumenucontent" lang="ru">
+        <span class="mobilemenu"><div class="menubar"></div><div class="menubar"></div><div class="menubar"></div></span>
+        <nav class="headmenu dropdown-content">
+            <a class="pagelink" id="homepage" runat="server" href="index.html">Glottophilos.com</a>
+            <a class="pagelink" runat="server" href="about.html">Информации</a>
+            <a class="pagelink" runat="server" href="language_proficiencies.html">Владение языков</a>
+            <a class="pagelink" runat="server" href="tutoring_services.html">Сервисы репетитора</a>
+            <a class="pagelink" runat="server" href="contact.html">Контакты</a>
+
+            <div class="language-selector">
+                <div>Выбрать язык</div>
+                <div class="langopt">
+                    <div class="langswitch-button" onclick="enswitch();" lang="en">English</div>
+                    <div class="langswitch-button" onclick="itswitch();" lang="it">Italiano</div>
+                    <div class="langswitch-button" onclick="ruswitch();">Русский</div>
+                    <div class="langswitch-button" onclick="frswitch();" lang="fr">Fran&ccedil;ais</div>
+                    <div class="langswitch-button" onclick="spswitch();" lang="es">Espa&ntilde;ol</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <p id="rufooter" class="cright" lang="ru">
+        &nbsp;&copy;
+        2019 - Джонатан Валлс
+    </p>
+    <!--Spanish Master-->
+    <div class="dropdown" id="spmenucontent" lang="es">
+        <span class="mobilemenu"><div class="menubar"></div><div class="menubar"></div><div class="menubar"></div></span>
+        <nav class="headmenu dropdown-content">
+            <a class="pagelink" id="homepage" runat="server" href="index.html">Glottophilos.com</a>
+            <a class="pagelink" runat="server" href="about.html">Informaci&oacute;n</a>
+            <a class="pagelink" runat="server" href="language_proficiencies.html">Idiomas</a>
+            <a class="pagelink" runat="server" href="tutoring_services.html">Servicios de tutor</a>
+            <a class="pagelink" runat="server" href="contact.html">Datos</a>
+
+            <div class="language-selector">
+                <div>Seleccionar idioma</div>
+                <div class="langopt">
+                    <div class="langswitch-button" onclick="enswitch();" lang="en">English</div>
+                    <div class="langswitch-button" onclick="itswitch();" lang="it">Italiano</div>
+                    <div class="langswitch-button" onclick="ruswitch();" lang="ru">Русский</div>
+                    <div class="langswitch-button" onclick="frswitch();" lang="fr">Fran&ccedil;ais</div>
+                    <div class="langswitch-button" onclick="spswitch();">Espa&ntilde;ol</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <p id="spfooter" class="cright" lang="es">
+        &nbsp;&copy;
+        2019 - Jonathan Walls
+    </p>
+    <!--French Master-->
+    <div class="dropdown" id="frmenucontent" lang="fr">
+        <span class="mobilemenu"><div class="menubar"></div><div class="menubar"></div><div class="menubar"></div></span>
+        <nav class="headmenu dropdown-content">
+            <a class="pagelink" id="homepage" runat="server" href="index.html">Glottophilos.com</a>
+            <a class="pagelink" runat="server" href="about.html">Information</a>
+            <a class="pagelink" runat="server" href="language_proficiencies.html">Langues</a>
+            <a class="pagelink" runat="server" href="tutoring_services.html">Services de tuteur</a>
+            <a class="pagelink" runat="server" href="contact.html">Coordonn&eacute;es</a>
+
+            <div class="language-selector">
+                <div>Seleccioner langue</div>
+                <div class="langopt">
+                    <div class="langswitch-button" onclick="enswitch();" lang="en">English</div>
+                    <div class="langswitch-button" onclick="itswitch();" lang="it">Italiano</div>
+                    <div class="langswitch-button" onclick="ruswitch();" lang="ru">Русский</div>
+                    <div class="langswitch-button" onclick="frswitch();">Fran&ccedil;ais</div>
+                    <div class="langswitch-button" onclick="spswitch();" lang="es">Espa&ntilde;ol</div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <p id="frfooter" class="cright" lang="fr">
+        &nbsp;&copy;
+        2019 - Jonathan Walls
+    </p>
+
+    <!--Home Content-->
+    <div id="enhome" class="mainpiece" style="overflow:hidden;">
+        <div class="hometext">
+            <img class="homeimg" src="../files/Profile.png" alt="Jonathan Walls" />
+            <h2>Purpose</h2>
+            <p class="indented">
+                Hi! I'm Jonathan, and this is just a little something I built so as to make myself
+                more available and accessible to employers, inquirers, and those who consider themselves merely interested parties.
+                If you believe yourself to fall under one of those categories, feel free to browse the information provided on this
+                site and contact me with any questions or concerns that may arise.
+            </p>
+        </div>
+        <div>
+            <div class="myrowcolumn">
+                <h2>About</h2>
+                <p>
+                    <a class="btn btn-default" href="about.html">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Language Proficiencies</h2>
+                <p>
+                    <a class="btn btn-default" href="language_proficiencies.html">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Tutoring Services</h2>
+                <p>
+                    <a class="btn btn-default" href="tutoring_services.html">Learn more &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Contact</h2>
+                <p>
+                    <a class="btn btn-default" href="contact.html">Learn more &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="ithome" class="mainpiece" style="overflow:hidden;" lang="it">
+        <div class="hometext">
+            <img class="homeimg" src="../files/Profile.png" alt="Jonathan Walls" />
+            <h2>Obbiettivo</h2>
+            <p class="indented">
+                Ciao! Mi chiamo Jonathan, e questa &egrave; una piccolina cosa che ho creata per farmi pi&ugrave; disponibile e
+                accessabile ai datori di lavoro, e anche a quelli che sono semplicemente interessati. Se Lei si considera incluso in una di queste
+                categorie, non esiti di vedere l'informazione fornita su questo sito e di contattarmi con delle domande o preoccupazioni che si presentino.
+            </p>
+        </div>
+        <div>
+            <div class="myrowcolumn">
+                <h2>Generale</h2>
+                <p>
+                    <a class="btn btn-default" href="about.html">Scoprire pi&ugrave; &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Lingue</h2>
+                <p>
+                    <a class="btn btn-default" href="language_proficiencies.html">Scoprire pi&ugrave; &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Servizi Insegnante Privato</h2>
+                <p>
+                    <a class="btn btn-default" href="tutoring_services.html">Scoprire pi&ugrave; &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Contatto</h2>
+                <p>
+                    <a class="btn btn-default" href="contact.html">Scoprire pi&ugrave; &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="ruhome" class="mainpiece" style="overflow:hidden;" lang="ru">
+        <div class="hometext">
+            <img class="homeimg" src="../files/Profile.png" alt="Jonathan Walls" />
+            <h2>Цель</h2>
+            <p class="indented">
+                Здравствуйте! Я Джонатан, и это маленькое дело, которое я создал, чтобы я смог быть более доступным
+                работодателям, опросникам, и тем, которые считаются просто заинтересованными. Если Вы считаетесь в одной из этих категории,
+                пожалуйста смотрите на информацию на этом сайте и свяжитесь со мной с вопросами или делами, которые являются.
+            </p>
+        </div>
+        <div>
+            <div class="myrowcolumn">
+                <h2>Информация</h2>
+                <p>
+                    <a class="btn btn-default" href="about.html">Узнайте больше &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Владение языков</h2>
+                <p>
+                    <a class="btn btn-default" href="language_proficiencies.html">Узнайте больше &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Сервисы репетитора</h2>
+                <p>
+                    <a class="btn btn-default" href="tutoring_services.html">Узнайте больше &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Контакты</h2>
+                <p>
+                    <a class="btn btn-default" href="contact.html">Узнайте больше &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="sphome" class="mainpiece" style="overflow:hidden;" lang="es">
+        <div class="hometext">
+            <img class="homeimg" src="../files/Profile.png" alt="Jonathan Walls" />
+            <h2>Objetivo</h2>
+            <p class="indented">
+                Hola! Me llamo Jonathan, y esto es una peque&ntilde;a cosa que yo cre&eacute; para renderme m&aacute;s
+                disponible y accesible a empleadores y personas interesadas. Si Ud. se cree de ser en una de esas categor&iacute;as, sientase
+                libre de explorar la informaci&oacute;n en este sito y contactarme con preguntas o problemas que se presenten.
+            </p>
+        </div>
+        <div>
+            <div class="myrowcolumn">
+                <h2>Informaci&oacute;n</h2>
+                <p>
+                    <a class="btn btn-default" href="about.html">Descubrir m&aacute;s &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Idiomas</h2>
+                <p>
+                    <a class="btn btn-default" href="language_proficiencies.html">Descubrir m&aacute;s &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Servicios de Tutor</h2>
+                <p>
+                    <a class="btn btn-default" href="tutoring_services.html">Descubrir m&aacute;s &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Datos</h2>
+                <p>
+                    <a class="btn btn-default" href="contact.html">Descubrir m&aacute;s &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="frhome" class="mainpiece" style="overflow:hidden;" lang="fr">
+        <div class="hometext">
+            <img class="homeimg" src="../files/Profile.png" alt="Jonathan Walls" />
+            <h2>Objet</h2>
+            <p class="indented">
+                Salut! Je suis Jonathan, et &ccedil;a c'est une petite chose que j'ai cr&eacute;e pour me rendre
+                plus disponible et accessible &agrave; employeurs et aussi &agrave; ceux qui se considerent seulement interess&eacute;s. Si vous vous
+                croyez de faire partie d'une de ces cat&eacute;gories, n'h&eacute;sitez pas de regarder l'information fournie sur ce site
+                et de me contacter avec des questions ou des probl&egrave;mes qui se pr&eacute;sentent.
+            </p>
+        </div>
+        <div>
+            <div class="myrowcolumn">
+                <h2>Information</h2>
+                <p>
+                    <a class="btn btn-default" href="about.html">D&eacute;couvrez plus &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Langues</h2>
+                <p>
+                    <a class="btn btn-default" href="language_proficiencies.html">D&eacute;couvrez plus &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Services de tuteur</h2>
+                <p>
+                    <a class="btn btn-default" href="tutoring_services.html">D&eacute;couvrez plus &raquo;</a>
+                </p>
+            </div>
+            <div class="myrowcolumn">
+                <h2>Coordonn&eacute;es</h2>
+                <p>
+                    <a class="btn btn-default" href="contact.html">D&eacute;couvrez plus &raquo;</a>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--About Content-->
+    <div id="enabout">
+        <style>
+
+            p {
+                text-indent: 50px;
+            }
+        </style>
+        <div class="mainpiece">
+            <h1>About</h1>
+            <div id="Background and Education">
+                <h2>Background and Education</h2>
+                <p>
+                    I was born, in Scandicci, Italy, a suburb of Florence, in the year 1997. Both of my parents are music professors, and it is here that everything started
+                    because it was here that I learned to love language and music. Growing up speaking both Italian and English was a great influence on my life and it began
+                    what has turned into quite the love affair with all things linguistic. We moved to the United States in the year 2002, where we started out in Searcy, Arkansas,
+                    and then moved on to Flower Mound, Texas after 2 years. I attended high school for 3 years at Marcus High School in Flower Mound, Texas, up to my senior
+                    year when my family moved to Searcy, Arkansas, and I graduated from Searcy High in the year 2015. Throughout this period I primarily followed in my parents'
+                    footsteps and started to carve out my niche as a cellist, however even in middle school I took a beginning Spanish course.
+                </p>
+                <p>
+                    It was in high school that this developed into a true obsession and as I studied Spanish and Latin in school, I dabbled in Irish, Mandarin, Arabic,
+                    and other languages on the side. On entering the University of Oklahoma in the fall of 2015, I found myself in my element.  I entered with a double major
+                    in Russian and French and a minor in Spanish, and have since added a major in Italian and a minor in Linguistics.
+                </p>
+            </div>
+            <div id="Experience Abroad">
+                <h2>Experience Abroad</h2>
+                <p>
+                    My experiences abroad have been rather extensive, naturally the first five years of my life were spent abroad, and since then the trend has continued, having
+                    traveled to a collection of different countries.  I have returned to Italy a number of times, and have also visited the UK and Ireland on
+                    numerous occasions. I additionally spent a month doing an intensive course in Grenoble, France, and a full academic year studying at Peter the Great St. Petersburg
+                    Polytechnic University. Previous, shorter trips would include primarily a short, one-week trip to the Philippines.
+                </p>
+            </div>
+            <div id="Work Experience">
+                <h2>Work Experience</h2>
+                <p>
+                    I have worked in a variety of positions, primarily since my freshman year at university. I started out as a dishwasher in the cafeteria at the University of Oklahoma,
+                    and then fairly quickly went to work for the Language Learning Center, where I have been since and am currently working as senior staff. I have also
+                    worked regularly as a Russian, Italian, and Spanish tutor at OU, and enjoyed a brief summer stint as a contract laborer in Arkansas. My most recent position (held in
+                    conjunction with the tutoring and lab positions during Fall 2018) was that of a worker at a local bakery and restaurant in Norman, La Baguette.
+                </p>
+                <p>
+                    While these are largely the extent of my paid positions, it is worth nothing that I have also a great deal of experience both in written translation and oral
+                    interpretation, including technical translation to and from Russian.
+                </p>
+            </div>
+            <div id="Special Skills">
+                <h2>Special Skills</h2>
+                <p>
+                    There are other things that I believe are worth noting, skills that I have acquired that would not be part of a school or university curriculum. One of these,
+                    while not terribly helpful to most job situations, is that I have learned to use several styles of martial arts, primarily Capoeira and Tai Chi. More relevant
+                    to most situations is that I have also picked up a good amount of technical expertise. I am quite proficient in using the programs in the Microsoft Office suite,
+                    and I have a certain knowledge of C&#35;, as well as (clearly) HTML and CSS for web design. It is my hope that these skills would be useful in most any given work environment.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="itabout" lang="it">
+        <style>
+
+            p {
+                text-indent: 50px;
+            }
+        </style>
+        <div class="mainpiece">
+            <h1>Generale</h1>
+            <div id="Crescita ed Educazione">
+                <h2>Crescita ed Educazione</h2>
+                <p>
+                    Sono nato a Scandicci, vicino a Firenze, nel 1997. Tutte e due i genitori sono professori di musica, ed il mio amore per le lingue e la musica comincia
+                    con questo fatto. L'essere cresciuto parlando italiano ed inglese &egrave; stato una grande influenza sulla mia vita ed &egrave; diventato un grande
+                    amore per tutte le cose linguistiche. Ci siamo trasferiti agli Stati Uniti in 2002, a Searcy, Arkansas, e poi a Flower Mound, Texas, dopo 2 anni.
+                    Sono andato per tre anni a Marcus High School a Flower Mound, Texas, fino al mio quarto anno, quando la mia famiglia si &egrave; trasferita di nuovo
+                    a Searcy, Arkansas, e mi sono diplomato dal Searcy High School in 2015. Durante questo periodo, ho generalmente seguito i miei genitori nella musica
+                    e sono diventato un violoncellista, ma anche nella scuola media ho seguito un corso di spagnolo.
+                </p>
+                <p>
+                    Era al liceo che tutto questo si &egrave; sviluppato in una vera ossessione, e mentre studiavo lo spagnolo e il latino a scuola, studiavo
+                    un po' l'irlandese, il cinese, l'arabo, ed anche altre lingue. Avendo cominciato all'Universit&agrave; d'Oklahoma nel autunno di 2015, mi sono trovato nel
+                    mio elemento. Ho cominciato con due specializzazioni in russo e francese ed un &quot;minor&quot; in spagnolo, e ho poi aggiunto un'altra specializzazione
+                    in italiano ed un altro &quot;minor&quot; nella linguistica.
+                </p>
+            </div>
+            <div id="Esperienze all'estero">
+                <h2>Esperienze all'estero</h2>
+                <p>
+                    Le mie esperienze all'estero sono state molte, naturalmente i miei primi cinque anni di vita sono stati passati in Italia (che sarebbe l'estero, con rispetto
+                    agli Stati Uniti), e dopo quei anni la tendenza si &egrave; continuata. Da allora ho viaggiato ad un sacco di altri paesi. Sono tornato in Italia varie
+                    volte, e sono anche andato all'Inghilterra e all'Irlanda diverse volte. Ho anche passato un mese seguendo un corso intensivo di lingua francese a Grenoble, in
+                    Francia, e tutto l'anno accademico di 2016-2017 studiando all'Universit&agrave; Politecnico di Pietro il Grande a San Pietroburgo, in Russia. Prima, ho fatto
+                    anche dei viaggi pi&ugrave; corti, che sarebbero caratterizzati soprattutto da una settimana nelle Filippine.
+                </p>
+            </div>
+            <div id="Lavoro">
+                <h2>Lavoro</h2>
+                <p>
+                    Ho lavorato in una variet&agrave; di posti, principalmente dopo il mio primo anno all'universit&agrave;. Ho cominciato come un lavapiatti nella mensa all'Universit&agrave;
+                    d'Oklahoma, e poi quasi subito ho cominciato di lavorare per il Language Learning Center, dove sono stato da quel tempo e dove lavoro adesso come &quot;senior staff&quot;.
+                    Lavoro anche spesso come tutor di russo, d'italiano, e di spagnolo all'Universit&agrave; d'Oklahoma, e ho approffittato un breve periodo lavorando nell'estate come
+                    contraente in Arkansas. Il mio posto il pi&ugrave; recente (dove ho lavorato allo stesso tempo con i posti di tutor ed al LLC durante l'autunno di 2018)
+                    era ad un panificio locale a Norman, che si chiama La Baguette.
+                </p>
+                <p>
+                    Nonostante il fatto che questi rappresentano la maggior parte dei miei posti di lavoro pagati, bisogna notare che ho anche molta esperienza nella traduzione
+                    scritta e nella interpretazione di lingua orale, incluso traduzione tecnica da ed al russo.
+                </p>
+            </div>
+            <div id="Abilita' Particolari">
+                <h2>Abilit&agrave; Particolari</h2>
+                <p>
+                    Ci sono altre cose che mi sembrano degni d'aver menzionato, abilit&agrave; che ho acquisto che non farebbero parte d'un programma scolastico.  Uno di questi,
+                    anche se non &egrave; molto utile per molti posti, &egrave; che ho imparato alcuni stili d'arti marziali, principalmente Capoeira e Tai Ji. Ancora pi&ugrave;
+                    pertinente a molte situazioni &egrave; che ho acquisto anche un bel po' d'esperienza tecnica. Sono molto esperto nell'uso dei programmi di Microsoft Office,
+                    ed ho una certa conoscenza della lingua C&#35;, e poi (ovviamente) HTML e CSS per i siti web. Spero che queste abilit&agrave; possano essere utili in qualunque
+                    lavoro.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="ruabout" lang="ru">
+        <style>
+
+            p {
+                text-indent: 50px;
+            }
+        </style>
+        <div class="mainpiece">
+            <h1>Информации</h1>
+            <div id="Биографические данные и образование">
+                <h2>Биографические данные и образование</h2>
+                <p>
+                    Я родился в Скандиччи, в Италии, около Флоренции, в 1997ом году. Оба мои родители являются профессорами музыки, и отсюда начиналось всё, потому что
+                    в этой природе я начал любить языки и музыку. Моё взросление, говорящий и по-итальянски и по-английски, имело большое влияние на мою жизнь и создало
+                    то, что стало большой любовю к всем лингвистическим предметам. Мы приехали в США в 2002ом году, в Серси, в Арканзасе, а потом мы приехали в Флауер Маунд,
+                    в Техасе, после двух лет. Я учился три года в школе Маркус, в Техасе, до моего четвёртого года, когда моя семья приехала снова в Серси, и я закончил школу
+                    в Серси в 2015ом году. В течение этого периода, я следовал за моих родителей и хотел стать виолончелистом, а даже в средней школе я следил один курс
+                    испанского языка.
+                </p>
+                <p>
+                    В старшой школе это стал одерживимостью к языкам, пока я изучал испанский язык и латинский язык в школе, я тоже отдельно изучал ирландский язык, китайский
+                    язык, арабский язык, и другие. Когда я начал учиться в Университете Оклахомы осенью 2015ого года, я себя нашёл в своём элементе. Сначало у меня были две
+                    специальности русского языка и французского языка с &laquo;минором&raquo; испанского языка, и после этого я тоже принял другую специальность итальянского
+                    языка и другой &laquo;минор&raquo; лингвистики.
+                </p>
+            </div>
+            <div id="Образование за границей">
+                <h2>Образование за границей</h2>
+                <p>
+                    У меня очень много опыта за границей (то есть, не в США), естественно первые пять лет моей жизни были проведены за границей, и эта тенденция продолжалась потом.
+                    После этого, я путешествовал в другие страны. Я вернулся в Италию несколько раз, и я также путешествовал в Англию и в Ирландию. Я изучал французский язык
+                    в течение месяца в Гренобле, во Франции, и изучал русский язык в Санкт Петербургском Политехническом Университете Петра Великого в течение года. Ранше, я
+                    путешествовал в неделю в Филиппинские острова.
+                </p>
+            </div>
+            <div id="Работа">
+                <h2>Работа</h2>
+                <p>
+                    Я работал в разнообразием работных мест, особенно после моего первого года в университет. Я начал посудомойкой в столовом в Университете Оклахомы, а довольно быстро
+                    я начал работать в лаборатории языков в университет, где я ещё работаю старшим персоналом. С того времени, я тоже работаю репетитором русского, итальянского, и испанского языка
+                    в Университете Оклахомы, и летом 2016ого года я был рабочиком в Арканзасе. Моё последное место работы (где я работал одновременно с работами репетитора и в лаборатории
+                    в осени 2018ого года) в пекарни/ресторане в Нормане, который называется La Baguette.
+                </p>
+                <p>
+                    Хотя эти все мои работы, надо заметить, что у меня тоже довольно много опыт в писменном и устном переведении, даже техническое переведение с русского и на русский.
+                </p>
+            </div>
+            <div id="Умения">
+                <h2>Умения</h2>
+                <p>
+                    У меня и другие умения, которые стоит заметить и, которыми я не бы занимался в школе или в университете. Один из этих, даже если это умение не очень полезное для многих
+                    ситуаций, это &#9472; я изучал несколько боевых искусств, особенно Капоэйра и Тайцзи. Более полезно для многих ситуаций, я тоже занимался техникой. Я умею
+                    использовать все прогаммы Microsoft, немного знаю о языке C&#35;, и тоже (и это мне кажется, очевидно), HTML и CSS для дизайна веб-сайтов. Я надеюсь, что эти умения
+                    смогли быть полезными для почти какой-нибудь работы.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="spabout" lang="es">
+        <style>
+
+            p {
+                text-indent: 50px;
+            }
+        </style>
+        <div class="mainpiece">
+            <h1>Informaci&oacute;n</h1>
+            <div id="Formaci&oacute;n y Educaci&oacute;n">
+                <h2>Formaci&oacute;n y Educaci&oacute;n</h2>
+                <p>
+                    Yo nac&iacute; en Scandicci, Italia, en la perifer&iacute;a de Florencia, en el a&ntilde;o 1997. Ambos de mis padres son profesores de m&uacute;sica,
+                    y era aqu&iacute; que todo empez&oacute; porque era en este ambiente que aprend&iacute; de amar los idiomas y la m&uacute;sica. El crecimiento hablando
+                    el italiano y el ingl&eacute;s ten&iacute;a una gran influencia sobre mi vida y caus&oacute; un amor para todas cosas ling&uuml;&iacute;sticas. Nos mudamos
+                    a los Estados Unidos en 2002, y viv&iacute;amos en Searcy, Arkansas, y despu&eacute;s de dos a&ntilde;os nos mudamos a Flower Mound, en Tejas. Asist&iacute;
+                    a Marcus High School por tres a&ntilde;os en Flower Mound, hasta mi cuarto a&ntilde;o cuando mi familia se mud&oacute; de nuevo a Searcy, Arkansas, donde
+                    me gradu&eacute; en 2015. Durante este periodo yo segu&iacute;a a mis padres y me devolv&iacute; en violoncelista, pero yo todav&iacute;a segu&iacute;
+                    un curso de espa&ntilde;ol en la escuela media.
+                </p>
+                <p>
+                    Era en la escuela superior que eso se desaroll&oacute; en una verdadera obsesi&oacute;n, cuando yo estudiaba el espa&ntilde;ol y el lat&iacute;n. Yo estudiaba
+                    tambi&eacute;n el irland&eacute;s, el chino, y el &aacute;rabe en mi tiempo libre. Cuando yo empez&eacute; a la Universidad de Oklahoma en 2015, me encontr&eacute;
+                    en mi elemento. Empez&eacute; con una doble especializaci&oacute;n en ruso y franc&eacute;s, y con una &quot;especializaci&oacute;n menor&quot; en espa&ntilde;ol, y despu&eacute;s
+                    a&ntilde;ad&iacute; una otra especializaci&oacute;n en italiano y una otra especializaci&oacute;n menor en ling&uuml;&iacute;stica.
+                </p>
+            </div>
+            <div id="Experiencias al Extranjero">
+                <h2>Experiencias al Extranjero</h2>
+                <p>
+                    Mis experiencias al extranjero son muchas, naturalmente mis primeros cinco a&ntilde;os eran pasados al extranjero (fuera de los Estados Unidos), y esta
+                    tendencia se continua hoy. Despu&eacute;s de este tiempo viaj&eacute; a muchos otros pa&iacute;ses. Yo he volvido a la Italia unas veces, y he visitado
+                    el Reino Unido y la Irlanda varias veces. Pas&eacute; un mes seguiendo un curso intesivo de franc&eacute;s en Grenoble, y un a&ntilde;o acad&eacute;mico
+                    entero a la Universidad Polit&eacute;cnica en San Petesburgo, en Rusia. Antes, fu&iacute; por una semana a las Filipinas.
+                </p>
+            </div>
+            <div id="Trabajo">
+                <h2>Trabajo</h2>
+                <p>
+                    Yo he trabajado en una variedad de lugares, especialmente despu&eacute;s de mi primero a&ntilde;o a la universidad. Empez&eacute; como un lavacopas en la cafeter&iacute;a
+                    a la Universidad de Oklahoma, y bastante r&aacute;pidamente comenc&eacute; de trabajar en el Language Learning Center, donde trabajo ahora y donde soy &quot;senior staff&quot;.
+                    Desde entonces, he trabajado como tutor de ruso, de italiano, y de espa&ntilde;ol a la Universidad de Oklahoma, y trabaj&eacute; un verano como trabajador independiente en Arkansas. Mi
+                    posici&oacute;n la m&aacute;s reciente (en la cual yo trabajaba a lo mismo tiempo que como tutor y al LLC durante el autumno de 2018) es la de trabajador en una
+                    pasteler&iacute;a de la localidad de Norman, La Baguette.
+                </p>
+                <p>
+                    Aunque esas son casi todas mis posiciones pagadas, se debe notar que tengo tambi&eacute;n mucha experiencia en la traducci&oacute;n escrita y oral, inclusa
+                    la traducci&oacute;n t&eacute;cnica de y al ruso.
+                </p>
+            </div>
+            <div id="Habilidades">
+                <h2>Habilidades</h2>
+                <p>
+                    Hay otras coasas que valen notar, habilidades que obten&iacute; que no ser&iacute;an parte de un curr&iacute;culo de una escuela o universidad. Una de estas,
+                    aunque no ser&iacute;a muy &uacute;til en muchas posiciones, es que aprend&iacute; usar unos estilos de arte marcial, principalmente el Capoeira y el Tai Chi.
+                    Lo que ser&iacute;a m&aacute;s &uacute;til en muchas situaciones de trabajo es que tambi&eacute;n tengo mucha experiencia con la tecnolog&iacute;a. S&eacute; usar
+                    bien los programas de Microsoft Office, y s&eacute; usar un poco el C&#35; y (claro) el HTML y CSS para el dise&ntilde;o de p&aacute;ginas web. Espero que estas
+                    habilidades puedan ser &uacute;tiles en cualquier lugar de trabajo.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="frabout" lang="fr">
+        <style>
+
+            p {
+                text-indent: 50px;
+            }
+        </style>
+        <div class="mainpiece">
+            <h1>Information</h1>
+            <div id="Formation et Education">
+                <h2>Formation et Education</h2>
+                <p>
+                    Je suis n&eacute; en Italie, dans la ville de Scandicci, qui est dans la p&eacute;rif&eacute;rie de Florence, dans l'ann&eacute;e 1997. Tous les deux de
+                    mes parents sont professeurs de musique, et c'est l&agrave; que tout s'est commenc&eacute;, parce que c'&eacute;tait l&agrave; o&ugrave; j'ai appris d'aimer
+                    les langues et la musique. J'ai grandi en parlant italien et anglais, et cela &eacute;tait une grande influence sur ma vie et a commenc&eacute; une sorte
+                    d'affair de c&oelig;ur avec tout ce qui est linguistique. Nous avons d&eacute;m&eacute;nag&eacute; aux &Eacute;tats-Unis en 2002, &agrave; Searcy, dans
+                    l'&eacute;tat d'Arkansas, et puis nous avons d&eacute;m&eacute;nag&eacute; &agrave; Flower Mound, dans l'&eacute;tat de Texas depuis deux ans. J'allais
+                    au lyc&eacute;e pendant trois ans &agrave; Marcus High School &agrave; Flower Mound, Texas, jusqu'&agrave; ma derni&egrave;re ann&eacute;e, quand ma famille
+                    a d&eacute;m&eacute;nag&eacute; autre fois &agrave; Searcy, Arkansas, o&ugrave; j'ai re&ccedil;u mon dipl&ocirc;me en 2015. Pendant cette p&eacute;riode
+                    je suis devenu un bon violonceliste, mais j'ai aussi suivi un cours d'espagnol.
+                </p>
+                <p>
+                    C'&eacute;tait dans le lyc&eacute;e que cela est developp&eacute; dans une vrai obsession, et pendant que j'&eacute;tudiait l'espagnol et le latin, j'ai aussi
+                    &eacute;tudi&eacute; un peu du ga&eacute;lique d'Irlande, le chinois, l'arabe, et d'autres langues aussi. Quand je me suis inscrit &agrave; l'universit&eacute;
+                    d'Oklahoma l'automne de 2015, je me suis trouv&eacute; dans mon &eacute;l&eacute;ment. Je suis entr&eacute; avec deux specializations en russe et fran&ccedil;ais
+                    et un &laquo;minor&raquo; en espagnol, et puis j'ai ajout&eacute; une autre specialization en italien et un autre &laquo;minor&raquo; de linguistique g&eacute;n&eacute;rale.
+                </p>
+            </div>
+            <div id="Exp&eacute;rience &aacute; l'&eacute;tranger">
+                <h2>Exp&eacute;rience &aacute; l'&eacute;tranger</h2>
+                <p>
+                    Mes exp&eacute;riences &agrave; l'&eacute;tranger ont &eacute;t&eacute; nombreuses, naturellement les premiers cinq ans de ma vie sont pass&eacute;s &agrave;
+                    l'&eacute;tranger, et depuis cette tendence a continu&eacute;, et je suis all&eacute; &agrave; d'autres pays aussi. Je me suis revenu &agrave; l'Italie quelques fois,
+                    et je suis all&eacute; aussi au Royaume-Uni et &agrave; l'Irlande plusieurs fois. De plus, j'ai pass&eacute; un mois en suivant un cours intensif de langue fran&ccedil;aise
+                    &agrave; Grenoble, et une ann&eacute;e compl&egrave;te en &eacute;tudiant &agrave; l'Universit&eacute; Politechnique de Saint-P&eacute;tersbourg. J'ai voyag&eacute;
+                    aussi tr&egrave;s br&egrave;vement aux Philippines pendant une semaine.
+                </p>
+            </div>
+            <div id="Travail">
+                <h2>Travail</h2>
+                <p>
+                    J'ai travaill&eacute; dans une vari&eacute;t&eacute; de lieus, surtout depuis ma premi&egrave;re ann&eacute;e &agrave; l'universit&eacute;. J'ai commenc&eacute; comme un
+                    plongeur dans la caf&eacute;t&eacute;ria &agrave; l'Universit&eacute; d'Oklahoma, et apr&egrave;s &ccedil;a j'ai commenc&eacute; de travailler au Centre des Langues, o&ugrave;
+                    je travaille maintenant comme personnel sup&eacute;rieur. J'ai aussi travaill&eacute; comme tuteur de russe, d'italien, et d'espagnol &agrave; l'universit&eacute;, et j'ai travaill&eacute;
+                    pendant un &eacute;t&eacute; comme ouvrier contractuel en Arkansas. Mon lieu de travail le plus r&eacute;cent (o&ugrave; j'ai travaill&eacute; au m&ecirc;me temps qu'au
+                    LLC et comme tuteur pendant l'automne de 2018) c'&eacute;tait &agrave; un restaurant &agrave; Norman, La Baguette.
+                </p>
+                <p>
+                    Bien que ces-l&agrave; soient tous mes travails pay&eacute;s, il faut aussi noter que j'ai aussi beaucoup d'exp&eacute;rience en traduction &eacute;crite et
+                    interpr&eacute;tation orale, y compris traduction technique de et au russe.
+                </p>
+            </div>
+            <div id="Autres comp&eacute;tences">
+                <h2>Autres comp&eacute;tences</h2>
+                <p>
+                    Il y a d'autres choses qui je crois qu'il faut noter, des comp&eacute;tences que j'ai acquises qui ne feraient pas partie d'un programme scolaire. Une de ces,
+                    m&ecirc;me s'elle n'est pas tr&egrave;s utile dans la majorit&eacute; de travails, c'est que j'ai appris d'utiliser plusieurs styles d'arts martiaux, surtout
+                    Capoeira et Tai Chi. Ce qui a plus a voir avec beaucoup de situations c'est que j'ai aussi beaucoup d'exp&eacute;rience technique. Je sais utiliser bien les programmes
+                    de Microsoft Office, j'ai une certaine connaissance de C&#35;, et HTML et CSS aussi pour conception de sites web. C'est mon espoir que ces comp&eacute;tences
+                    puissent &ecirc;tre utiles dans quelconque situation de travail.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Language Proficiencies content-->
+    <div id="enlp">
+        <div class="mainpiece">
+            <h1>Language Proficiencies</h1>
+            <header>
+                <p>
+                    This page is intended to list the languages I speak to any significant degree, and detail my proficiencies in each.
+                </p>
+            </header>
+            <div id="English">
+                <h2>English*</h2>
+                <p>
+                    As a native speaker of English, my proficiency in this language is quite advanced and flexible for nearly all circumstances.
+                </p>
+            </div>
+            <div id="Italian">
+                <h2>Italian*</h2>
+                <p>
+                    This is my second native language, having learned it as a child in Italy.  I received additional, formal training at the University
+                    of Oklahoma, where it has been one of my majors for the last three and a half years. In this, too, I have easily C2 level abilities
+                    and can adapt to most any situation.
+                </p>
+            </div>
+            <div id="Spanish">
+                <h2>Spanish</h2>
+                <p>
+                    Spanish is a language that I have been studying and speaking for some years now, beginning in middle school and through university, where I have completed a minor
+                    specialization in the language and achieved C2-level fluency.
+                </p>
+            </div>
+            <div id="French">
+                <h2>French</h2>
+                <p>
+                    I learned French at the University of Oklahoma, where for the last three and a half years it has been one of my majors.  I spent August of 2017 at l'Universit&eacute;
+                    Grenoble Alpes, where I completed an intensive course in French language and reached my fourth C2 language.
+                </p>
+            </div>
+            <div id="Russian">
+                <h2>Russian</h2>
+                <p>
+                    After nearly four years of studying Russian at the University of Oklahoma, I lack only my capstone course before finishing this third degree. I spent a full academic year in St.
+                    Petersburg, Russia, and have reached roughly a C1 level of proficiency.
+                </p>
+            </div>
+            <div id="Portuguese">
+                <h2>Portuguese</h2>
+                <p>
+                    Portuguese is a language that I have never studied in any formal setting, but which due to my understanding of several related languages, I have a high
+                    passive comprehension level, possibly B2, and a speaking level that is roughly at A2.
+                </p>
+            </div>
+            <div id="Chinese">
+                <h2>Chinese</h2>
+                <p>
+                    I have studied Mandarin Chinese for some time, though my actual proficiency is rather low, at roughly an A2, possibly B1 level.
+                </p>
+            </div>
+            <div id="Biblical Hebrew">
+                <h2>Biblical Hebrew</h2>
+                <p>
+                    I have some understanding of Biblical Hebrew, but this is more a hobby than anything else, and as yet I hesitate to say that I have any significant proficiency in it
+                    other than reading a small amount.
+                </p>
+            </div>
+            <div id="Irish">
+                <h2>Irish</h2>
+                <p>
+                    Much like Hebrew, I have studied a certain amount of Irish and it is a language that I continue to slowly develop my abilities in.
+                </p>
+            </div>
+            <div id="Latin">
+                <h2>Latin</h2>
+                <p>
+                    Having done 2 years of Latin in high school, and speaking a number of its daughter languages, I have a decent understanding of Latin and have been able to
+                    work my way through some of the works, for example, of the medieval writer Boccaccio without too much difficulty.
+                </p>
+            </div>
+            <footer>
+                <p>
+                    * native languages
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div id="itlp" lang="it">
+        <div class="mainpiece">
+            <h1>Lingue</h1>
+            <header>
+                <p>
+                    Questa pagina serve per elencare le lingue che parlo di qualunque livello, e per dettagliare il livello di ciascuno.
+                </p>
+            </header>
+            <div id="Inglese">
+                <h2>Inglese*</h2>
+                <p>
+                    Siccome l'inglese &egrave; una mia madre lingua, il mio livello in questa lingua &egrave; molto avanzato e flessibile per praticamente ogni circonstanza.
+                </p>
+            </div>
+            <div id="Italiano">
+                <h2>Italiano*</h2>
+                <p>
+                    Questa &egrave; la mia seconda madre lingua, avendola imparata da bambino in Italia. Ho ricevuto istruzione addizionale e formale all'Universit&agrave;
+                    di Oklahoma, dove &egrave; una mia specializzazione per gli ultimi tre anni e mezzo. In questo, anche, parlo al livello C2 e mi posso addattare a qualunque situazione.
+                </p>
+            </div>
+            <div id="Spagnolo">
+                <h2>Spagnolo</h2>
+                <p>
+                    Lo spagnolo &egrave; una lingua che ho studiato e parlato da qualche anno, dalla scuola media all'universit&agrave;, dove ho finito un &quot;minor&quot;
+                    nella lingua e ottenuto il livello C2.
+                </p>
+            </div>
+            <div id="Francese">
+                <h2>Francese</h2>
+                <p>
+                    Ho imparato il francese all'Universit&agrave; d'Oklahoma, dove per gli ultimi tre anni e mezzo &egrave; stato una delle mie specializzazioni.
+                    Ho passato l'agosto di 2017 a l'Universit&eacute; Grenoble Alpes, dove ho fatto un corso intensivo di lingua francese e ottenuto la mia quarta
+                    lingua al livello C2.
+                </p>
+            </div>
+            <div id="Russo">
+                <h2>Russo</h2>
+                <p>
+                    Dopo quasi quattro anni d'aver studiato il russo all'Universit&agrave; d'Oklahoma, mi manca solamente il &quot;capstone&quot; prima di finire
+                    questa terza laurea. Ho passato tutto l'anno accademico a San Pietroburgo, in Russia, ed ho ottenuto pi&ugrave; o meno il livello C1.
+                </p>
+            </div>
+            <div id="Portoghese">
+                <h2>Portoghese</h2>
+                <p>
+                    Il portoghese &egrave; una lingua che non ho mai studiato in una classe formale, ma che grazie alla mia comprensione di varie lingue vicine, ho un
+                    livello alto di comprensione passiva, forse il B2, ed un livello di parlare che &egrave; verso l'A2.
+                </p>
+            </div>
+            <div id="Cinese">
+                <h2>Cinese</h2>
+                <p>
+                    Ho studiato il Cinese da un po', ma il mio livello effettivo di parlare &egrave; abbastanza basso, verso l'A2, forse il B1.
+                </p>
+            </div>
+            <div id="L'ebraico della Bibbia">
+                <h2>L'ebraico della Bibbia</h2>
+                <p>
+                    Ho una certa comprensione dell'ebraico della Bibbia, ma questo &egrave; pi&ugrave; d'altro un hobby, e fino a questo punto esito di dire che ne ho
+                    un buon livello altro che leggere un po'.
+                </p>
+            </div>
+            <div id="Irlandese">
+                <h2>Irlandese</h2>
+                <p>
+                    Come l'ebraico, ho studiato un po' l'irlandese ed &egrave; una lingua in cui continuo di lentamente sviluppare le mie abilit&agrave;.
+                </p>
+            </div>
+            <div id="Latino">
+                <h2>Latino</h2>
+                <p>
+                    Avendo studiato il latino per due anni al liceo, e sapendo parlare alcune delle sue lingue descendenti, ho una certa comprensione
+                    del latino ed ho potuto leggere alcune opere, ad esempio, del scrittore medievale, Boccaccio, senza troppa difficolt&agrave;.
+                </p>
+            </div>
+            <footer>
+                <p>
+                    * lingue madre
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div id="rulp" lang="ru">
+        <div class="mainpiece">
+            <h1>Владение языков</h1>
+            <header>
+                <p>
+                    Эта страница является списком языков, которые я владею, даже немного, и описанием моего владения каждого.
+                </p>
+            </header>
+            <div id="Английский язык">
+                <h2>Английский язык*</h2>
+                <p>
+                    Так как английский язык один из моих родных языков, моё владение его очень свободно, и могу использовать этот язык в любой ситуации.
+                </p>
+            </div>
+            <div id="Итальянский язык">
+                <h2>Итальянский язык*</h2>
+                <p>
+                    Это мой второй родной язык, который я говорил ребёнком в Италии. Я получил допольнительное, формальное образование в итальянском языке
+                    в Университет Оклахомы, и это была одна из моих специальностей три года с половиной. Я тоже владею свободно итальянский язык, на уровне
+                    C2.
+                </p>
+            </div>
+            <div id="Испанский язык">
+                <h2>Испанский язык</h2>
+                <p>
+                    Я уже много лет изучаю и говорю по испански, с средней школы до сегодняшнего дня, и я закончил специальность &laquo;минор&raquo; в этом языке и
+                    владею язык на уровне C2.
+                </p>
+            </div>
+            <div id="Французский язык">
+                <h2>Французский язык</h2>
+                <p>
+                    Я изучал французский язык в Университете Оклахомы как специальность три года с половиной. Я проводил месяц августа 2017ого года в Университете
+                    Гренобля (Universit&eacute; Grenoble Alpes), и закончил интенсивный курс французского языка и четвёртый раз достигнул уровень C2.
+                </p>
+            </div>
+            <div id="Русский язык">
+                <h2>Русский язык</h2>
+                <p>
+                    После почти четырёх лет изучающий русский язык в Университете Оклахомы, и я только не закончил мой последний курс этой специальности. Я тоже проводил
+                    целый последний академический год в Санкт Петербурге, и получил уровень C1.
+                </p>
+            </div>
+            <div id="Португальский язык">
+                <h2>Португальский язык</h2>
+                <p>
+                    Я формально никогда не изучал португальский язык, а благодаря моему владению связанных языков, я очень много понимаю пассивно, на уровне около B2,
+                    и у меня устное владение около A2.
+                </p>
+            </div>
+            <div id="Китайский язык">
+                <h2>Китайский язык</h2>
+                <p>
+                    Я несколько лет изучал китайский язык, а моё настоящее владение этого языка довольно низкое, около A2, может быть B1.
+                </p>
+            </div>
+            <div id="Иврит библейский">
+                <h2>Иврит библейский</h2>
+                <p>
+                    У меня небольшое понимание иврит библейского, а это больше всего хобби, и я просто читаю немного.
+                </p>
+            </div>
+            <div id="Ирландский язык">
+                <h2>Ирландский язык</h2>
+                <p>
+                    Как на иврит, я изучал немного ирландский язык, и это язык, на котором я продолжаю улучшать моё владение.
+                </p>
+            </div>
+            <div id="Латинский язык">
+                <h2>Латинский язык</h2>
+                <p>
+                    Я два года изучал латинский язык в школе, и так как я говорю несколько связанных языков, у меня неплохое понимание латинского языка и смог прочитать, например,
+                    части творчества средневековного писателя, Боккаччо, без слишком трудности.
+                </p>
+            </div>
+            <footer>
+                <p>
+                    * родные языки
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div id="splp" lang="es">
+        <div class="mainpiece">
+            <h1>Idiomas</h1>
+            <header>
+                <p>
+                    Esta p&aacute;gina es para elencar los idiomas que hablo a cualquier nivel, y para detallar mis competencias en cada uno.
+                </p>
+            </header>
+            <div id="Ingl&eacute;s">
+                <h2>Ingl&eacute;s*</h2>
+                <p>
+                    Dado que el ingl&eacute;s es mi madre lengua, mi competencia en este idioma es muy avanzada y adaptable a casi cada circunstancia.
+                </p>
+            </div>
+            <div id="Italiano">
+                <h2>Italiano*</h2>
+                <p>
+                    Esta es mi segunda madre lengua, que aprend&iacute; como un ni&ntilde;o en Italia. Recib&iacute; formaci&oacute;n adicional y formal
+                    a la Universidad de Oklahoma, donde esta ha sido una de mis especializaci&oacute;nes por los &uacute;ltimos tres a&ntilde;os y media. En este idioma
+                    tambi&eacute;n estoy al nivel C2 y me puedo adaptar a casi cada situaci&oacute;n.
+                </p>
+            </div>
+            <div id="Espa&ntilde;ol">
+                <h2>Espa&ntilde;ol</h2>
+                <p>
+                    El espa&ntilde;ol es un idioma que estudio y hablo desde unos a&ntilde;os, desde la escuela media hasta la universidad, donde cumpl&iacute; una
+                    especializaci&oacute;n menor en este idioma y obten&iacute; competencia de nivel C2.
+                </p>
+            </div>
+            <div id="Franc&eacute;s">
+                <h2>Franc&eacute;s</h2>
+                <p>
+                    Aprend&iacute; el franc&eacute;s a la Universidad de Oklahoma, donde por los &uacute;ltimos tres a&ntilde;os y media era una de mis especializaci&oacute;nes. Pas&eacute;
+                    el agosto de 2017 a la Universidad de Grenoble Alpes, donde segu&iacute; un curso intensivo del idioma y alcanc&eacute; mi cuarto idioma de nivel C2.
+                </p>
+            </div>
+            <div id="Ruso">
+                <h2>Ruso</h2>
+                <p>
+                    Despu&eacute;s de cuatro a&ntilde;os de estudiar el ruso a la Universidad de Oklahoma, me falta solamente mi curso final antes de terminar esta &uacute;ltima
+                    especializaci&oacute;n. Pas&eacute; un a&ntilde;o entero en San Petesburgo, Rusia, y obten&iacute; el nivel C1.
+                </p>
+            </div>
+            <div id="Portugu&eacute;s">
+                <h2>Portugu&eacute;s</h2>
+                <p>
+                    El portugu&eacute;s es un idioma que nunca estudi&eacute; en ning&uacute;n ambiente formal, pero gracias a mi comprensi&oacute;n de idiomas relacionados,
+                    tengo un nivel alto de comprensi&oacute;n pasiva, posiblemente el nivel B2, y un nivel de hablar que ser&iacute;a m&aacute;s o menos A2.
+                </p>
+            </div>
+            <div id="Chino">
+                <h2>Chino</h2>
+                <p>
+                    Estudio el chino desde unos a&ntilde;os, pero mi competencia real es bastante bajo, o el A2 o B1.
+                </p>
+            </div>
+            <div id="Ebreo biblico">
+                <h2>Ebreo biblico</h2>
+                <p>
+                    Tengo una cierta comprensi&oacute;n del ebreo biblico, pero eso es un pasatiempo m&aacute;s que otro, y hasta hoy no quiero decir que tengo una muy buena
+                    competencia adem&aacute;s que leer un poquito.
+                </p>
+            </div>
+            <div id="Irland&eacute;s">
+                <h2>Irland&eacute;s</h2>
+                <p>
+                    C&oacute;mo el ebreo, he estudiado una cierta cantidad del irland&eacute;s y es una lengua en la cual continuo lentamente de desarollar mi competencia.
+                </p>
+            </div>
+            <div id="Lat&iacute;n">
+                <h2>Lat&iacute;n</h2>
+                <p>
+                    Habiendo estudiado el lat&iacute;n por dos a&ntilde;os en la escuela secundaria, y hablando unos de sus idiomas descendientes, tengo una buena comprensi&oacute;n
+                    del lat&iacute;n y puedo leer las obras, por ejemplo, del escritor medieval Boccaccio sin demasiada dificultad.
+                </p>
+            </div>
+            <footer>
+                <p>
+                    * lenguas maternas
+                </p>
+            </footer>
+        </div>
+    </div>
+    <div id="frlp" lang="fr">
+        <div class="mainpiece">
+            <h1>Langues</h1>
+            <header>
+                <p>
+                    Cette page est pour &eacute;num&eacute;rer les langues qui je parle &agrave; un certain degr&eacute;, et pour d&eacute;tailler mes comp&eacute;tences
+                    avec chacun.
+                </p>
+            </header>
+            <div id="Anglais">
+                <h2>Anglais*</h2>
+                <p>
+                    Comme un locuteur natif, ma comp&eacute;tence dans cette langue est tr&egrave;s avanc&eacute;e et flexible pour presque chaque circonstance.
+                </p>
+            </div>
+            <div id="Italien">
+                <h2>Italien*</h2>
+                <p>
+                    &Ccedil;a c'est ma seconde langue maternelle, que j'ai appris comme un enfant en Italie. J'ai re&ccedil;u formation additionelle &agrave; l'universit&eacute;
+                    d'Oklahoma, o&ugrave; c'&eacute;tait un de mes &laquo;majors&raquo; pendant les derni&egrave;res trois ann&eacute;es et demi. Dans cette langue aussi, j'ai
+                    une comp&eacute;tence de niveau C2 au moins, et je me peux adapter &agrave; presque chaque situation.
+                </p>
+            </div>
+            <div id="Espagnol">
+                <h2>Espagnol</h2>
+                <p>
+                    L'espagnol c'est une langue qui j'ai &eacute;tudi&eacute;e et parl&eacute;e depuis quelques ann&eacute;es, avec un d&eacute;but &agrave; l'&eacute;cole et continuant
+                    &agrave; l'universit&eacute;, o&ugrave; j'ai fini une sp&eacute;cialization &laquo;minor&raquo; dans cette langue et j'ai atteint le niveau C2.
+                </p>
+            </div>
+            <div id="Fran&ccedil;ais">
+                <h2>Fran&ccedil;ais</h2>
+                <p>
+                    J'ai appris le fran&ccedil;ais &agrave; l'Universit&eacute; d'Oklahoma, o&ugrave; c'&eacute;tait un de mes &laquo;majors&raquo; pour les derni&egrave;res trois ann&eacute;es
+                    et demi. J'ai pass&eacute; l'ao&ucirc;t de 2017 &agrave; l'Universit&eacute; Grenoble Alpes, o&ugrave; j'ai fini un cours intensif de langue fran&ccedil;aise et
+                    o&ugrave; j'ai atteint ma quatri&egrave;me langue au niveau C2.
+                </p>
+            </div>
+            <div id="Russe">
+                <h2>Russe</h2>
+                <p>
+                    Depuis presque quatre ans d'&eacute;tudier le russe &agrave; l'Universit&eacute; d'Oklahoma, il me manque seulement mon cours final avant d'avoir fini cette troisi&egrave;me
+                    ma&icirc;tresse. J'ai pass&eacute; une ann&eacute;e compl&egrave;te &agrave; Saint-P&eacute;tersbourg, et j'ai atteint un niveau de C1.
+                </p>
+            </div>
+            <div id="Portugais">
+                <h2>Portugais</h2>
+                <p>
+                    Portugais c'est une langue que je n'ai jamais &eacute;tudi&eacute;e dans aucune situation formelle, mais gr&acirc;ce &agrave; ma compr&eacute;hension
+                    de plusieurs langues li&eacute;es, j'ai un niveau &eacute;lev&eacute; de compr&eacute;hension passive, possiblement B2, et un niveau de la langue parl&eacute;e
+                    qui est plus ou moins A2.
+                </p>
+            </div>
+            <div id="Chinois">
+                <h2>Chinois</h2>
+                <p>
+                    J'ai &eacute;tudi&eacute; le chinois pour quelques ann&eacute;es, mais ma comp&eacute;tence actuelle est assez basique, possiblement au niveau B1.
+                </p>
+            </div>
+            <div id="H&eacute;breu biblique">
+                <h2>H&eacute;breu biblique</h2>
+                <p>
+                    J'ai une certaine compr&eacute;hension d'h&eacute;breu biblique, mais c'est plut&ocirc;t un passe-temps, et j'h&eacute;site de dire que j'ai une grande comp&eacute;tence,
+                    except&eacute; de lire un peu.
+                </p>
+            </div>
+            <div id="Irlandais">
+                <h2>Irlandais</h2>
+                <p>
+                    Comme l'h&eacute;breu, j'ai &eacute;tudi&eacute; un peu d'irlandais, et c'est une langue dans laquelle je continue de d&eacute;velopper ma comp&eacute;tence.
+                </p>
+            </div>
+            <div id="Latin">
+                <h2>Latin</h2>
+                <p>
+                    Ayant suivi 2 ans de cours en latin &agrave; l'&eacute;cole, et parlant un certain nombre de ses langues descendantes, j'ai une bonne compr&eacute;hension
+                    du latin et j'ai pu lire quelques-uns des &oelig;uvres, par exemple, de l'&eacute;crivain m&eacute;di&eacute;val Boccaccio, sans trop de difficult&eacute;.
+                </p>
+            </div>
+            <footer>
+                <p>
+                    * langues maternelles
+                </p>
+            </footer>
+        </div>
+    </div>
+    <!--Tutoring Services content-->
+    <div id="ents">
+        <div class="mainpiece">
+            <h1>Tutoring Services</h1>
+            <p class="indented">
+                I offer tutoring services in Russian, Spanish, and Italian free of charge through OU Action Tutoring, available for students enrolled at the University of Oklahoma. For
+                others requiring tutoring services, please contact me and see the pricing below. I am willing to tutor Russian, Italian, Spanish, or French, and would be more
+                than happy to do Skype sessions. Anything beyond those languages I will consider on a case-by-case basis. Students, seniors, and veterans will receive discounted rates.
+            </p>
+            <h2>Pricing</h2>
+            <p>
+                All pricing is on an hourly basis.
+            </p>
+            <ul style="font-size:1.2em;">
+                <li><b>Regular:</b> &#36;35</li>
+                <li><b>Student:</b> &#36;20</li>
+                <li><b>Senior/Veteran:</b> &#36;15</li>
+            </ul>
+        </div>
+    </div>
+    <div id="itts" lang="it">
+        <div class="mainpiece">
+            <h1>Servizi Insegnante Privato</h1>
+            <p class="indented">
+                Offro servizi insegnante privato in russo, spagnolo, e italiano gratis tramite OU Action Tutoring, disponibile per studenti all'Universit&agrave; d'Oklahoma. Per
+                altri che richiedono servizi insegnante privato, per favore contattatemi e vedete i prezzi in gi&ugrave;. Sono disponibile per insegnare il russo, l'italiano,
+                lo spagnolo, o il francese, e sarei contento di farlo con l'uso di Skype. Altro che quelle lingue considerer&ograve; caso per caso. Studenti, persone d'et&agrave;
+                pi&ugrave; avanzata, e reduci riceveranno prezzi ridotti.
+            </p>
+            <h2>Prezzi</h2>
+            <p>
+                Tutti i prezzi sono orari.
+            </p>
+            <ul style="font-size:1.2em;">
+                <li><b>Regolare:</b> &#36;35</li>
+                <li><b>Studente:</b> &#36;20</li>
+                <li><b>Et&agrave; avanzata/Reduce:</b> &#36;15</li>
+            </ul>
+        </div>
+    </div>
+    <div id="ruts" lang="ru">
+        <div class="mainpiece">
+            <h1>Сервисы репетитора</h1>
+            <p class="indented">
+                Я работаю репетитором бесплатно на русском, на испанском, и на итальянском через OU Action Tutoring для студентов в Университете Оклахомы. Для других, требующих сервисы репетитора,
+                пожалуйста связываетесь со мной и смотрите на цены внизу. Я готов работать репетитором русского языка, итальянского языка, испанского языка, или французского языка,
+                и могу работать через Skype. Другие языки я считаю по отдельному. Студенты, пожилые люди, и ветераны получают скидку.
+            </p>
+            <h2>Цены</h2>
+            <p>
+                Все цены по часу.
+            </p>
+            <ul style="font-size:1.2em;">
+                <li><b>Обычные:</b> &#36;35</li>
+                <li><b>Студенты:</b> &#36;20</li>
+                <li><b>Пожилые люди/ветераны:</b> &#36;15</li>
+            </ul>
+        </div>
+    </div>
+    <div id="spts" lang="es">
+        <div class="mainpiece">
+            <h1>Servicios de tutor</h1>
+            <p class="indented">
+                Ofrezco servicios de tutor en ruso, espa&ntilde;ol, e italiano gratis a trav&eacute;s del OU Action Tutoring, que es disponible para estudiantes registrados a la Universidad de
+                Oklahoma. Para otros que requieran servicios de tutor, por favor p&oacute;nganse en contacto conmigo y miran a los precios abajo. Soy dispuesto para trabajar
+                como tutor en ruso, italiano, espa&ntilde;ol, o franc&eacute;s, y ser&iacute;a dispuesto a ense&ntilde;arlos usando el Skype. Considerar&eacute; otras lenguas individualmente.
+                Estudiantes, personas mayores, y veteranos recibir&aacute;n rebajas.
+            </p>
+            <h2>Precios</h2>
+            <p>
+                Todos los precios son a la hora.
+            </p>
+            <ul style="font-size:1.2em;">
+                <li><b>Regular:</b> &#36;35</li>
+                <li><b>Estudiante:</b> &#36;20</li>
+                <li><b>Personas Mayores/Veteranos:</b> &#36;15</li>
+            </ul>
+        </div>
+    </div>
+    <div id="frts" lang="fr">
+        <div class="mainpiece">
+            <h1>Services de tuteur</h1>
+            <p class="indented">
+                J'offre services de tuteur en russe et italien gratuites parmi OU Action Tutoring, qui sont disponibles pour tous les &eacute;tudiants inscrits &agrave; l'Universit&eacute;
+                d'Oklahoma. Pour les autres, contactez-moi s'il vous pla&icirc;t et voyez les prix en bas. Je suis disponible pour faire le tuteur de russe, italien, espagnol, ou fran&ccedil;ais,
+                et je serais disponible aussi de faire les le&ccedil;ons par Skype. Autre ces langues je consid&eacute;rerai au cas par cas. Les &eacute;tudiants, personnes &acirc;g&eacute;es,
+                et v&eacute;t&eacute;rans recevront des remises.
+            </p>
+            <h2>Prix</h2>
+            <p>
+                Tout les prix sont horaires.
+            </p>
+            <ul style="font-size:1.2em;">
+                <li><b>Regulier:</b> &#36;35</li>
+                <li><b>&Eacute;tudiant:</b> &#36;20</li>
+                <li><b>Personne &acirc;g&eacute;e/V&eacute;t&eacute;ran:</b> &#36;15</li>
+            </ul>
+        </div>
+    </div>
+    <!--Contact content-->
+    <div id="encontact">
+        <div class="mainpiece">
+            <h1>Contact Info</h1>
+            <p>
+                If you have any questions or concerns or would like to contact me regarding tutoring or other services,
+                I can be reached either by phone or email (email highly preferred), which have been provided below.
+            </p>
+            <address>
+                <b>Phone:</b> &#43;1 214-708-3445<br />
+                <b>Contact Email:</b>   <a href="mailto:Jonathan.a.walls-1@ou.edu">Jonathan.a.walls-1@ou.edu</a>
+            </address>
+            <a style="font-size:1.2em;" href="../files/Jonathan Alan Walls resume.pdf">Resume download (pdf)</a>
+        </div>
+    </div>
+    <div id="itcontact" lang="it">
+        <div class="mainpiece">
+            <h1>Dati</h1>
+            <p>
+                Se ha delle domande o preoccupazioni o mi vuole contattare riguardo ai servizi insegnante privato o altri servizi,
+                mi pu&ograve; contattare per telefono o email (l'email sarebbe preferito), che sono stati forniti in gi&ugrave;.
+            </p>
+            <address>
+                <b>Tel:</b> &#43;1 214-708-3445<br />
+                <b>Indirizzo Email:</b>   <a href="mailto:Jonathan.a.walls-1@ou.edu">Jonathan.a.walls-1@ou.edu</a>
+            </address>
+            <a style="font-size:1.2em;" href="../files/Jonathan Alan Walls resume.pdf">Scarica resume (pdf)</a>
+        </div>
+    </div>
+    <div id="rucontact" lang="ru">
+        <div class="mainpiece">
+            <h1>Контакты</h1>
+            <p>
+                Если у Вас есть вопросы, проблемы, или Вы бы хотели связываться со мной по вопросам сервисов репетитора, или других сервисов,
+                Вы можете говорить со мной по телефону или по электронной почте (электронная почта лучшая), которые поставлены внизу.
+            </p>
+            <address>
+                <b>Номер телефона:</b> &#43;1 214-708-3445<br />
+                <b>Электронная почта:</b>   <a href="mailto:Jonathan.a.walls-1@ou.edu">Jonathan.a.walls-1@ou.edu</a>
+            </address>
+            <a style="font-size:1.2em;" href="../files/Jonathan Alan Walls resume.pdf">Загружать резюме (pdf)</a>
+        </div>
+    </div>
+    <div id="spcontact" lang="es">
+        <div class="mainpiece">
+            <h1>Datos</h1>
+            <p>
+                Si Ud. tiene preguntas, preocupaciones, o me gustar&iacute;a contactar con relaci&oacute;n a servicios
+                de tutor o otros servicios, me puede contactar por tel&eacute;fono o correo electr&oacute;nico (el correo
+                ser&iacute;a preferable), que son provistos abajo.
+            </p>
+            <address>
+                <b>Tel&eacute;fono:</b> &#43;1 214-708-3445<br />
+                <b>Correo electr&oacute;nico:</b>   <a href="mailto:Jonathan.a.walls-1@ou.edu">Jonathan.a.walls-1@ou.edu</a>
+            </address>
+            <a style="font-size:1.2em;" href="../files/Jonathan Alan Walls resume.pdf">Descarga curr&iacute;culum (pdf)</a>
+        </div>
+    </div>
+    <div id="frcontact" lang="fr">
+        <div class="mainpiece">
+            <h1>Coordonn&eacute;es</h1>
+            <p>
+                Si vous avez des questions ou probl&egrave;mes ou me voudriez contacter &agrave; propos des services de tuteur ou d'autres services,
+                vous me pouvez contacter par t&eacute;l&eacute;phone ou courrier &eacute;lectronique (le courrier serait pr&eacute;f&eacute;rable), qui sont fournis en bas.
+            </p>
+            <address>
+                <b>T&eacute;l&eacute;phone:</b> &#43;1 214-708-3445<br />
+                <b>Adresse e-mail:</b>   <a href="mailto:Jonathan.a.walls-1@ou.edu">Jonathan.a.walls-1@ou.edu</a>
+            </address>
+            <a style="font-size:1.2em;" href="../files/Jonathan Alan Walls resume.pdf"> T&eacute;l&eacute;charger CV (pdf)</a>
+        </div>
+    </div>
+</body>
+</html>

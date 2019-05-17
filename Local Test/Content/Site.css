@@ -1,0 +1,312 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+    background-repeat: no-repeat;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+}
+
+form {
+    padding-bottom: 0;
+    min-height: 100vh;
+    background-image: url(../files/background-medium.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position:center;
+}
+
+.cright {
+    background-color: #222b3a;
+    color: #cbdaf2;
+    padding-top: 10px;
+    margin-bottom: 0;
+    text-indent: 0;
+    box-shadow: 0px 5px 4px #888888;
+}
+.btn {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.homeimg {
+    height: 200px;
+    width: auto;
+    display: block;
+    border-radius: 8px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hometext {
+    line-height: 2em;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+.mainpiece {
+    background: rgba(255,255,255, 0.8);
+    padding: 20px;
+    padding-bottom: 40px;
+    padding-top:35px;
+}
+/*font properties*/
+p {
+    font-size: 1.2em;
+}
+
+address {
+    font-size: 1.2em;
+}
+
+h1 {
+    font-weight: bold;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 50px;
+}
+
+/*setting navbar properties*/
+
+.homepage:hover {
+    background-color: #666666;
+}
+
+
+.headmenu {
+    display: none;
+}
+
+.dropdown {
+    display: inline-block;
+    background-color: #222b3a;
+    width: 100%;
+    box-shadow: 0px 5px 4px #888888;
+}
+ #menuplace{
+     height:0px;
+ }
+.dropdown-content {
+    display: none;
+    background-color:#222b3a;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.pagelink {
+    display: block;
+    background-color: #222b3a;
+    color: #cbdaf2;
+    font-size: 15pt;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 6pt;
+    padding-bottom: 6pt;
+}
+
+
+#homepage {
+    background-color: #222b3a;
+    color: #cbdaf2;
+    font-weight: bold;
+}
+.menubar{
+    width: 30px;
+    height: 5px;
+    margin: 6px 5px;
+    background-color: #cbdaf2;
+    border-radius:2px;
+}
+
+.pagelink:hover {
+    color: black;
+    background-color: #7088ad;
+    text-decoration: none;
+}
+/*set properties for language navigation*/
+.language-selector {
+    margin-left: 15px;
+    margin-bottom: 12px;
+    color:#cbdaf2;
+    background-color:#222b3a;
+    padding-right:10px;
+    position: relative;
+    display: block;
+}
+.language-selector:hover {
+    cursor: pointer;
+}
+.language-selector:hover .langopt{
+    display:block;
+}
+.langopt {
+    cursor:pointer;
+    display:none;
+    color: #cbdaf2;
+    position: absolute;
+    z-index:1;
+    background-color:#222b3a;
+    padding-top: 10px;
+    width: 110px;
+    box-shadow: 0px 5px 4px #888888;
+}
+.langopt div{
+    padding: 6px 16px;
+    display:block;
+}
+.langswitch-button:hover {
+    font-weight: bold;
+    color: white;
+}
+/*Cookie message formatting*/
+.accept-button {
+    background-color:white;
+    width:90px;
+    margin:auto;
+    border-radius:3px;
+    margin-bottom:20px;
+}
+.accept-button:hover {
+    font-weight:bold;
+    cursor:pointer;
+}
+.first-message-container {
+    width: 100vw;
+    background-color: black;
+    text-align: center;
+    display: inline-block;
+}
+.cookie-message {
+    color:white;
+}
+#first-message-place {
+    position:fixed;
+    bottom:0px;
+}
+
+/*my row formatting*/
+.myrowcolumn {
+    width: 100%;
+    float: none;
+    text-align: center;
+    padding-bottom: 50px;
+}
+/*This does the parallax stuff*/
+/*.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax__group {
+  position: relative;
+  height:100%;
+  overflow: visible;
+  transform-style: preserve-3d;
+}
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.parallax__layer--base {
+  transform: translateZ(0);
+}
+.parallax__layer--back {
+  transform: translateZ(-1px) scale(2);
+
+}*/
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set widths on the form inputs since otherwise they're 100% wide */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*Responsive, makes mobile menu less annoying for tablets*/
+@media screen and (min-width: 415px) {
+    .dropdown {
+        position: relative;
+    }
+    .headmenu{
+        position: absolute;
+        z-index:1;
+    }
+
+}
+/* Responsive: desktop */
+@media screen and (min-width: 865px) {
+    .jumbotron {
+        margin-top: 0px;
+    }
+
+    .body-content {
+        padding: 0;
+    }
+
+
+
+    .mobilemenu {
+        display: none;
+    }
+
+    .headmenu {
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        clear: right;
+        background-color: #222b3a;
+        box-shadow: 0px 5px 4px #888888;
+        display: inline-block;
+        overflow: visible;
+    }
+    #footerplace {
+        max-width: 1060px;
+        margin: auto;
+    }
+
+    .pagelink {
+        float: left;
+        color: #cbdaf2;
+        font-size: 15pt;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 6pt;
+        padding-bottom: 6pt;
+    }
+.language-selector{
+    float: right;
+    margin-top: 12px;
+    margin-right: 5px;
+}
+
+    .dropdown {
+        display: block;
+    }
+    .mainpiece {
+        max-width:1060px;
+        margin: auto;
+    }
+}
+/*this fixes column behavior when resizing*/
+@media screen and (min-width: 1060px){
+    .myrowcolumn {
+        width: 25%;
+        float: left;
+    }
+}
+/*set a class for indenting paragraphs*/
+.indented {
+    text-indent: 50px;
+}
